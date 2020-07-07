@@ -1,0 +1,828 @@
+body {
+    margin: 0px;
+    font-family: "Open Sans";
+
+    font-size: 20px;
+}
+@font-face{
+    font-family: 'Open Sans';
+    src: url("../fonts/OpenSans-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Open Sans';
+    src: url("../fonts/OpenSans-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+main {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+img{
+    max-width: 100%;
+}
+.welcome {
+    position: relative;
+    background-image: url(../images/football_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.welcome::after {
+    content: "";
+    background-color: #0a0e34;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.9;
+}
+.surface {
+    display: flex;
+    padding-top: 45px;
+    justify-content: center;
+    margin-bottom: 265px;
+}
+.surface__icon {
+    width: 191px;
+    height: 52px;
+}
+.container {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+    width: 1530px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 11px;
+    box-sizing: border-box;
+}
+h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 90px;
+}
+.slogan_ferst {
+    align-self: flex-start;
+}
+.slogan_two {
+    align-self: flex-end;
+    padding-right: 30px;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 14px;
+    padding-top: 224px;
+    padding-bottom: 110px;
+}
+.app__icon {
+    width: 42px;
+    min-width: 42px;
+    height: 48px;
+    margin-right: 28px;
+    margin-left: 58px;
+    margin-top: 13px;
+}
+.google__icon {
+    width: 40px;
+    min-width: 40px;
+    height: 50px;
+    margin-left: 58px;
+    margin-top: 13px;
+    margin-right: 28px;
+}
+.app_linkfirst {
+    display: block;
+    font-weight: normal;
+}
+.app_link {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.app__link {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    border-radius: 38px;
+    background-color: rgb(94, 66, 176);
+    width: 311px;
+    height: 77px;
+    margin-right: 51px;
+}
+.google__link {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    border-radius: 38px;
+    background-color: rgb(94, 66, 176);
+    width: 311px;
+    height: 77px;
+}
+.down {
+    position: relative;
+    background-image: url(../images/game_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: uppercase;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.down::after {
+    content: "";
+    background-color: #0a0e34;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.9;
+}
+.down_content {
+    position: relative;
+    z-index: 200;
+}
+.donloads_icon {
+    width: 105px;
+    height: 85px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+}
+.app_linkone {
+    display: block;
+    font-size: 80px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.app_linktwos {
+    font-size: 30px;
+    font-weight: normal;
+    color: #a496ca;
+}
+.donloads {
+    padding-top: 228px;
+    padding-bottom: 151px;
+}
+.donloads_link {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+}
+.link__footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 262px;
+}
+.surfacedooble {
+    margin-bottom: 52px;
+    display: flex;
+    justify-content: center;
+}
+.donloads__iconbc {
+    width: 103px;
+    height: 86px;
+    background-color: #6b4fd3;
+    border-radius: 20px;
+    padding: 25px 13px 25px 13px;
+    margin-right: 36px;
+}
+.texts_link {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.app_linktwo {
+    font-weight: bold;
+}
+.texts_link {
+    width: 700px;
+    max-width: 100%;
+}
+.surfaces {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 52px;
+}
+.atlet {
+    font-weight: bold;
+    font-size: 80px;
+    color: #e7e7e7;
+    text-transform: uppercase;
+    padding-left: 50%;
+}
+sup {
+    position: relative;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+}
+.part_one {
+    padding-left: 50%;
+    padding-right: 40px;
+}
+sup::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    margin-top: 7px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: #573fae;
+    border-radius: 2px;
+    width: 19px;
+    height: 5px;
+}
+h3 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #c0c0c0;
+    text-transform: uppercase;
+}
+.part_three {
+    background-color: #573fae;
+    padding-left: 50%;
+    padding-right: 40px;
+}
+.part_two {
+    background-color: #f5f4fa;
+    padding-left: 50%;
+    padding-right: 40px;
+}
+.content {
+    position: relative;
+}
+.three::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    margin-top: 7px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: #eeeeee;
+    border-radius: 2px;
+    width: 19px;
+    height: 5px;
+}
+.atlets_preview {
+    position: relative;
+    width: 50%;
+}
+.atlet_preview {
+    max-width: 556px;
+    position: absolute;
+    top: 27px;
+    right: 50px;
+    bottom: 0;
+}
+.players_part_three {
+    background-color: #0a0e34;
+    padding-left: 10%;
+    color: #ffffff;
+}
+.players_part_two {
+    background-color: #f5f4fa;
+    padding-left: 10%;
+}
+.part_threes {
+    color: #9173e6;
+}
+.part_threes::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    margin-top: 7px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: #eeeeee;
+    border-radius: 2px;
+    width: 19px;
+    height: 5px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.players_part_one {
+    padding-left: 10%;
+}
+.players_preview {
+    position: relative;
+    width: 50%;
+}
+.player_preview {
+    position: absolute;
+    max-width: 991px;
+    top: 23px;
+    left: 809px;
+}
+.players {
+    font-weight: bold;
+    font-size: 80px;
+    color: #e7e7e7;
+    text-transform: uppercase;
+    padding-left: 10%;
+}
+.players_content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.text_player {
+    width: 40%;
+}
+.number {
+    font-size: 24px;
+    color: #f5f6f7;
+    font-weight: bold;
+}
+.number::after {
+    content: " ";
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: #8f7bc8;
+    border-radius: 2px;
+    width: 24px;
+    height: 5px;
+}
+.box {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: #5e42b0;
+    width: 168px;
+    height: 155px;
+    top: 213px;
+    right: 100%;
+    margin-right: -84px;
+}
+.box_text,
+.box_texts {
+    position: relative;
+}
+.box_text{
+    width: 50%;
+    min-width: 50%;
+    box-sizing: border-box;
+}
+.preview {
+    display: flex;
+    margin: 0;
+    width: 50%;
+    min-width: 50%;
+}
+.preview_active, .preview_find_contact{
+    width: 50vw;
+}
+.beactive {
+    display: flex;
+    flex-direction: row;
+
+    max-width: 100%;
+}
+.beactive_text, .text_find_contact {
+    /*width: 50%;*/
+
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 185px;
+    padding-left: 128px;
+    padding-right: 85px;
+    box-sizing: border-box;
+
+}
+.text_find{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 187px;
+    padding-top: 185px;
+    padding-right: 50px;
+box-sizing: border-box;
+}
+.active {
+    font-weight: bold;
+    font-size: 80px;
+    color: #e7e7e7;
+    text-transform: uppercase;
+    /*max-width: 600px;*/
+}
+.beactive_texts {
+    font-size: 24px;
+
+}
+.work_it {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.find_contact {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    max-width: 100%;
+}
+.box_find_contact {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5e42b0;
+    width: 168px;
+    height: 155px;
+    top: 213px;
+    left: 100%;
+    margin-left: -84px;
+}
+.number_find_contact {
+    font-size: 24px;
+    color: #f5f6f7;
+    font-weight: bold;
+}
+.number_find_contact::after {
+    content: " ";
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: #8f7bc8;
+    border-radius: 2px;
+    width: 24px;
+    height: 5px;
+}
+.texts_find_contact {
+    font-size: 24px;
+
+}
+@media (min-width: 641px) and (max-width: 960px) {
+    body {
+        width: 100vw;
+    }
+    h1 {
+        font-size: 64px;
+    }
+    h3 {
+        font-size: 32px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .welcome {
+        background-image: url(../images/football_1280.jpg);
+    }
+    .container {
+        width: 703px;
+        max-width: 100%;
+        padding: 0 23px;
+    }
+    .slogan {
+        padding-left: 55px;
+    }
+    .slogan_two {
+        padding-left: 105px;
+    }
+    .surface {
+        margin-bottom: 175px;
+    }
+    .footer {
+        padding-bottom: 92px;
+    }
+    .part_one,
+    .part_two,
+    .part_three,
+    .atlet {
+        padding-left: 38%;
+        padding-right: 33px;
+    }
+    .atlets_preview {
+        width: 100%;
+    
+    }
+    .atlet_preview {
+        width: 49vw;
+        top: 96px;
+        left: -15%;
+    }
+    .players {
+        margin-bottom: 0;
+    }
+    .players_part_two,
+    .players_part_one,
+    .players_part_three,
+    .players {
+        padding-left: 33px;
+    }
+    .players_preview {
+        
+    }
+    .player_preview {
+        width: 690px;
+        top: 60px;
+        left: 80%;
+    }
+    .text_player {
+        width: 50%;
+    }
+    .preview_active,
+    .preview_find_contact {
+        width: 100%;
+    }
+    .box,
+    .box_find_contact {
+        width: 116px;
+        height: 116px;
+        top: -10%;
+        left: 33px;
+        margin-left: 0;
+    }
+    .number::after, .number_find_contact::after {
+        top: 65%;
+    }
+    .beactive,
+    .preview,
+    .work_it {
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
+    .text_find, .text{
+        padding-left: 26px;
+        padding-top: 55px;
+        padding-bottom: 100px;
+    }
+    .beactive_text,
+    .text_find_contact {
+        max-width: 960px;
+        width: 960px;
+    }
+    .active {
+        margin-bottom: 0;
+    }
+    .find_contact {
+        flex-direction: column-reverse;
+    }
+    .down {
+        background-image: url(../images/game_767.jpg);
+    }
+    .link__footer {
+        padding-bottom: 55px;
+    }
+    .surfaces {
+        padding-bottom: 24px;
+    }
+    .donloads_link {
+        flex-direction: column;
+        align-items: center;
+    }
+    .app_linktwos {
+        margin: 0 auto;
+    }
+    .donloads {
+        padding-bottom: 290px;
+        padding-top: 125px;
+    }
+    .donloads__iconbc {
+        margin-bottom: 44px;
+    }
+}
+@media (max-width: 640px) {
+    main {
+       
+    }
+    h1 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 23px;
+        padding-top: 55px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .welcome {
+        background-image: url(../images/football_767.jpg);
+    }
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .slogan_two {
+        padding-left: 44px;
+    }
+    .surface {
+        padding-top: 33px;
+        margin-bottom: 130px;
+    }
+    .footer {
+        padding-top: 90px;
+        padding-bottom: 83px;
+        flex-direction: column;
+    }
+    .app__link,
+    .google__link {
+        border-radius: 17px;
+        background-color: rgb(94, 66, 176);
+        width: 280px;
+        height: 35px;
+        margin: 0 auto 14px;
+    }
+    .app__icon {
+        width: 20px;
+        height: 24px;
+        margin-left: 82px;
+        margin-top: 3px;
+        margin-right: 8px;
+    }
+    .google__icon {
+        width: 22px;
+        height: 24px;
+        margin-left: 82px;
+        margin-top: 6px;
+        margin-right: 5px;
+    }
+    .texts_link {
+        font-size: 8px;
+        margin-top: 9px;
+    }
+    .part_one,
+    .part_two,
+    .part_three,
+    .atlet,
+    .players_part_two,
+    .players_part_one,
+    .players_part_three,
+    .players {
+        padding: 0 20px;
+    }
+    .atlet {
+        padding-top: 24px;
+        padding-bottom: 244px;
+        margin: 0;
+        font-size: 50px;
+    }
+    .atlet_preview {
+        width: 192px;
+        top: 91px;
+        left: 70px;
+    }
+    .content {
+        max-width: 100%;
+        
+    }
+    .player_preview {
+        width: 302px;
+        top: 125px;
+        left: 10px;
+    }
+    .text_player,
+    .text_atlet {
+        width: 100%;
+        padding-bottom: 55px;
+    }
+    .players {
+        padding-bottom: 245px;
+        margin: 0;
+        padding-top: 22px;
+        font-size: 50px;
+    }
+    .players_part_one,
+    .part_one {
+        background-color: #fafafa;
+    }
+    .preview_active,
+    .preview_find_contact {
+        width: 100vw;
+    }
+    .preview{
+        width: 100%;
+    }
+    .box,
+    .box_find_contact {
+        width: 70px;
+        height: 70px;
+        top: -8%;
+        left: 20px;
+        margin: 0;
+    }
+    .box_text{
+        width: 100%;
+    }
+    .number,
+    .number_find_contact {
+        font-size: 14px;
+    }
+    .number_find_contact::after,
+    .number::after {
+        top: 65%;
+        border-radius: 1px;
+        width: 17px;
+        height: 4px;
+    }
+    .beactive,
+    .preview,
+    .work_it {
+        flex-direction: column;
+        margin: 0;
+    }
+    .text,
+    .text_find {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 75px;
+        padding-top: 35px;
+    }
+    .beactive_texts,
+    .texts_find_contact {
+        max-width: 640px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+    .active {
+        margin-bottom: 0;
+        font-size: 28px;
+        width: 220px;
+    }
+    .find_contact {
+        flex-direction: column-reverse;
+    }
+    .down {
+        background-image: url(../images/game_767.jpg);
+    }
+    .link__footer {
+        padding-bottom: 55px;
+    }
+    .surfaces {
+        padding-bottom: 24px;
+    }
+    .donloads_link {
+        flex-direction: column;
+        align-items: center;
+    }
+    .app_linktwos {
+        margin: 0 auto;
+        font-size: 14px;
+    }
+    .donloads {
+        padding-bottom: 50px;
+        padding-top: 99px;
+    }
+    .donloads__iconbc {
+        width: 57px;
+        height: 47px;
+        margin-bottom: 44px;
+        border-radius: 20px;
+        padding: 13px 7px;
+        margin-right: 0;
+    }
+    .donloads_icon {
+        width: 57px;
+        height: 47px;
+    }
+    .link__footer {
+        padding-top: 26px;
+        padding-bottom: 83px;
+        flex-direction: column;
+    }
+    .app_linkone {
+        font-size: 32px;
+    }
+    .down_content {
+        max-width: 100%;
+        width: 280px;
+        padding: 0 20px;
+    }
+    .surface__icon {
+        width: 133px;
+        height: 36px;
+    }
+}
